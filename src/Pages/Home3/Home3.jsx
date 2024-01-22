@@ -1,8 +1,14 @@
+import About from "../../Components3/About/About";
+import HeroSection from "../../Components3/HeroSection/HeroSection";
+import Service from "../../Components3/Service/Service";
+
 const Home3 = () => {
   return (
     <>
       <div>
-        <h1 className="text-2xl font-bold text-center">I am from home One.</h1>
+        <HeroSection />
+        <Service />
+        <About />
       </div>
     </>
   );

@@ -14,7 +14,7 @@ const Navbar3 = () => {
 
   return (
     <nav
-      className={` w-full transition-all duration-300 bg-wheat  text-graySmoke`}
+      className={` w-full transition-all duration-300 bg-wheat  text-[#7d7f8c]`}
     >
       {/* top Navbar */}
       <div className="bg-[#090f27] h-[50px] hidden md:flex items-center  ">
@@ -94,7 +94,7 @@ const Navbar3 = () => {
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
-                <ul className="shadow-lg hidden group-hover:block rounded-sm  text-graySmoke w-[200px] text-left   transition-all duration-500 text-sm sm:text-base py-4 bg-wheat ">
+                <ul className="shadow-lg hidden group-hover:block rounded-sm  text-[#7d7f8c] w-[200px] text-left   transition-all duration-500 text-sm sm:text-base py-4 bg-wheat ">
                   <div className=" px-5 group hover:text-white hover:bg-orange ">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/" className="py-2 block">
@@ -161,7 +161,7 @@ const Navbar3 = () => {
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
-                <ul className="shadow-lg hidden group-hover:block rounded-sm  text-graySmoke w-[200px] text-left   transition-all duration-500 text-sm sm:text-base  py-4 bg-wheat ">
+                <ul className="shadow-lg hidden group-hover:block rounded-sm  text-[#7d7f8c] w-[200px] text-left   transition-all duration-500 text-sm sm:text-base  py-4 bg-wheat ">
                   <div className=" px-5 group hover:text-white hover:bg-orange ">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/room" className="block py-2">
@@ -200,7 +200,7 @@ const Navbar3 = () => {
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-5 lg:pt-8 z-20">
-                <ul className="shadow-lg hidden group-hover:block rounded-sm  text-graySmoke w-[200px] text-left   transition-all duration-500 text-sm sm:text-base  py-4 bg-wheat ">
+                <ul className="shadow-lg hidden group-hover:block rounded-sm  text-[#7d7f8c] w-[200px] text-left   transition-all duration-500 text-sm sm:text-base  py-4 bg-wheat ">
                   <div className=" px-5 group hover:text-white hover:bg-orange ">
                     <li className="hover:ml-3 duration-300  ">
                       <NavLink to="/about" className="py-2 block">
@@ -254,7 +254,7 @@ const Navbar3 = () => {
                 <BiChevronDown className="ml-1" />
               </span>
               <div className="absolute pt-4 lg:pt-8 z-20">
-                <ul className="shadow-lg hidden group-hover:block rounded-sm bg-wheat text-graySmoke w-60 text-left   transition-all duration-500 text-sm sm:text-base py-4">
+                <ul className="shadow-lg hidden group-hover:block rounded-sm bg-wheat text-[#7d7f8c] w-60 text-left   transition-all duration-500 text-sm sm:text-base py-4">
                   <div className=" px-5 group hover:text-white hover:bg-orange ">
                     <li className="hover:ml-3 duration-300 ">
                       <NavLink to="/blog" className="py-2 block">
@@ -288,7 +288,7 @@ const Navbar3 = () => {
           {/* large device visible button and search icon */}
           <div className="hidden lg:flex items-center">
             <Link to="#">
-              <button className="w-[150px] h-[50px] xl:w-[200px] xl:h-[56px] bg-orange rounded-md font-Yantramanav text-white text-base md:text-md 2xl:text-lg flex items-center justify-center ">
+              <button className="w-[150px] h-[50px] xl:w-[200px] xl:h-[56px] bg-orange hover:bg-[#c43e00] transition-all duration-300 rounded-md font-Yantramanav text-white text-base md:text-md 2xl:text-lg flex items-center justify-center">
                 Get A Quoute
                 <FaArrowRight className="text-white ml-2" size={16} />
               </button>
