@@ -1,13 +1,13 @@
 import About from "../../Components3/About/About";
 import HeroSection from "../../Components3/HeroSection/HeroSection";
-import Service from "../../Components3/Service/Service";
+import OurServices from "../../Components3/OurServices/OurServices";
 
 const Home3 = () => {
   return (
     <>
       <div>
         <HeroSection />
-        <Service />
+        <OurServices />
         <About />
       </div>
     </>

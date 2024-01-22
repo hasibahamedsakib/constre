@@ -10,7 +10,7 @@ export default {
       colors: {
         gray: "#565969",
         graySmoke: "#8f9199",
-        wheat: "#f1f3f5",
+        wheat: "#f2f3f5",
         whiteSmoke: "#fefeff",
         orange: "#ff5e14",
         normalBlack: "#0a1027",
