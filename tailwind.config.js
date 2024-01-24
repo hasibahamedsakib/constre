@@ -13,6 +13,7 @@ export default {
         wheat: "#f2f3f5",
         whiteSmoke: "#fefeff",
         orange: "#ff5e14",
+        deepBlue: "#0c1537",
         normalBlack: "#0a1027",
       },
       screens: {
