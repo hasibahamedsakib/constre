@@ -87,52 +87,53 @@ const LatestProject = () => {
         </Link>
       </div>
 
-      {/* section slider content */}
-      <div
-        className="mt-14 xl:mt-[60px] px-5 md:px-6 lg:px-[30px] keen-slider "
-        ref={sliderRef}
-      >
-        {projectData.map(
-          ({
-            id,
-            projectImg,
-            projectName,
-            projectInfo,
-            controlUrl,
-            linkUrl,
-          }) => {
-            return (
-              <div key={id} className="keen-slider__slide number-slide1 ">
-                <ProjectCard
-                  projectImg={projectImg}
-                  projectName={projectName}
-                  projectInfo={projectInfo}
-                  controlUrl={controlUrl}
-                  linkUrl={linkUrl}
-                />
-              </div>
-            );
-          }
-        )}
-      </div>
-      <div className="flex items-center justify-center p-2 mt-10 ">
-        {loaded && instanceRef.current && (
-          <div className="dots">
-            {[
-              ...Array(instanceRef.current.track.details.slides.length).keys(),
-            ].map((idx) => {
+      <div className="px-5 2xl:px-[30px]">
+        {/* section slider content */}
+        <div className="mt-14 xl:mt-[60px]  keen-slider " ref={sliderRef}>
+          {projectData.map(
+            ({
+              id,
+              projectImg,
+              projectName,
+              projectInfo,
+              controlUrl,
+              linkUrl,
+            }) => {
               return (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    instanceRef.current?.moveToIdx(idx);
-                  }}
-                  className={"dot" + (currentSlide === idx ? " active" : "")}
-                ></button>
+                <div key={id} className="keen-slider__slide number-slide1 ">
+                  <ProjectCard
+                    projectImg={projectImg}
+                    projectName={projectName}
+                    projectInfo={projectInfo}
+                    controlUrl={controlUrl}
+                    linkUrl={linkUrl}
+                  />
+                </div>
               );
-            })}
-          </div>
-        )}
+            }
+          )}
+        </div>
+        <div className="flex items-center justify-center p-2 mt-10 ">
+          {loaded && instanceRef.current && (
+            <div className="dots">
+              {[
+                ...Array(
+                  instanceRef.current.track.details.slides.length
+                ).keys(),
+              ].map((idx) => {
+                return (
+                  <button
+                    key={idx}
+                    onClick={() => {
+                      instanceRef.current?.moveToIdx(idx);
+                    }}
+                    className={"dot" + (currentSlide === idx ? " active" : "")}
+                  ></button>
+                );
+              })}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );
