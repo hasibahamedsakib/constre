@@ -9,10 +9,10 @@ export default function Accordion({ children, title, id, active }) {
   }, []);
 
   return (
-    <div className="py-2 w-full 2xl:w-[610px]">
+    <div className="py-2 w-full 2xl:w-[610px] ">
       <h2>
         <button
-          className="flex items-center justify-between w-full 2xl:w-[610px] text-left font-semibold font-Garamond hover:bg-[#0b1537] focus:bg-[#0b1537] p-5 group bg-[#0b1537]"
+          className="flex items-center justify-between w-full 2xl:w-[610px] text-left font-semibold font-Garamond hover:bg-[#0b1537] focus:bg-[#0b1537] p-5 md:px-6 md:py-5 lg:px-[30px] lg:py-5 group bg-[#0b1537]"
           onClick={(e) => {
             e.preventDefault();
             setAccordionOpen(!accordionOpen);
@@ -58,14 +58,14 @@ export default function Accordion({ children, title, id, active }) {
         id={`accordion-text-${id}`}
         role="region"
         aria-labelledby={`accordion-title-${id}`}
-        className={`grid text-sm sm:text-base font-Archivo font-light leading-[26px] text-wheat overflow-hidden transition-all duration-300 ease-in-out px-5 bg-[#0b1537] ${
+        className={`grid text-sm sm:text-base font-Archivo font-light leading-[26px] text-wheat overflow-hidden transition-all duration-300 ease-in-out px-5 md:px-6 lg:px-[30px]   bg-[#0b1537] ${
           accordionOpen
             ? "grid-rows-[1fr] opacity-100"
             : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="overflow-hidden">
-          <p className="py-4 text-sm sm:text-base font-Archivo font-light leading-[28px] text-graySmoke">
+        <div className="overflow-hidden ">
+          <p className="py-4 pb-5 text-sm sm:text-base font-Archivo font-light leading-[28px] text-graySmoke">
             {children}
           </p>
         </div>

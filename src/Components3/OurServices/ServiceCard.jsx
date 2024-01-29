@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ image, title, description, icon, btnUrl }) => {
   return (
     <div className="rounded-md border-b-orange border-b-[1px] relative group">
-      <div className="overflow-hidden">
+      <div className="overflow-hidden rounded-t-md">
         <img
           src={image}
           alt="service section images "
@@ -27,7 +27,7 @@ const ServiceCard = ({ image, title, description, icon, btnUrl }) => {
       {/* card details*/}
       <div className="p-5 xl:px-[37px] xl:py-[22px] bg-wheat">
         <Link className="" to="#">
-          <h2 className="text-2xl xl:text-[26px] text-normalBlack hover:text-orange font-Yantramanav font-bold leading-9 lg:leading-10 xl:leading-[45px] transition-all duration-300">
+          <h2 className="text-2xl xl:text-[26px] text-normalBlack hover:text-orange font-Yantramanav font-bold leading-9 lg:leading-10 xl:leading-[45px] transition-all duration-300 ease-in-out">
             {title}
           </h2>
         </Link>
@@ -35,7 +35,7 @@ const ServiceCard = ({ image, title, description, icon, btnUrl }) => {
           {description}
         </p>
         <Link
-          className="flex items-center text-[17px] text-orange font-medium font-Yantramanav leading-10 mt-3"
+          className="flex items-center text-[17px] text-orange font-medium font-Yantramanav leading-10 mt-3 ease-in-out"
           to={btnUrl}
         >
           Read More

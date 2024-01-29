@@ -59,7 +59,7 @@ const AboutConstre = () => {
         </div>
       </div>
       {/* shape img */}
-      <div className="absolute left-[70px] bottom-[120px]">
+      <div className="absolute left-[70px] bottom-[120px] animate-wiggle">
         <img src={shapeAbout} draggable={!true} alt="" />
       </div>
     </section>

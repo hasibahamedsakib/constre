@@ -27,6 +27,15 @@ export default {
         "4xl": "1700px",
         // 1400-1600, 1300-1399,1200-1299,992-1199(1170),768-991,600-767,480-599,320-479
       },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "translateY(-50px)" },
+          "50%": { transform: "translateY(-20px)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 3s ease-in-out infinite",
+      },
     },
   },
   plugins: [],

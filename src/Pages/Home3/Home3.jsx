@@ -1,4 +1,5 @@
 import AboutConstre from "../../Components3/AboutConstre/AboutConstre";
+import BlogSection from "../../Components3/BlogSection/BlogSection";
 import HeroSection from "../../Components3/HeroSection/HeroSection";
 import LatestProject from "../../Components3/LatestProject/LatestProject";
 import LocationAndContact from "../../Components3/LocationAndContact/LocationAndContact";
@@ -19,6 +20,7 @@ const Home3 = () => {
         <LocationAndContact />
         <Testimonials />
         <ProjectPlanning />
+        <BlogSection />
       </div>
     </>
   );
