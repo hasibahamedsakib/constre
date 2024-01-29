@@ -9,7 +9,7 @@ const ProjectPlanning = () => {
         <div className="flex-1 h-full">
           <img
             src={faqImage}
-            alt="faq image "
+            alt="faq side-image"
             draggable={!true}
             className="w-full h-full"
           />
