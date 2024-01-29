@@ -113,7 +113,7 @@ const LatestProject = () => {
             }
           )}
         </div>
-        <div className="flex items-center justify-center p-2 mt-10 ">
+        <div className="flex items-center justify-center mt-10 ">
           {loaded && instanceRef.current && (
             <div className="dots">
               {[

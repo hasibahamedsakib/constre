@@ -9,11 +9,16 @@ const ProjectCard = ({
   controlUrl,
   linkUrl,
 }) => {
-  console.log(projectImg);
   return (
     <div
-      className={`overflow-hidden relative rounded-md h-[500px] w-full lg:w-[444px]  bg-[url("${projectImg}")] bg-center bg-cover`}
+      className={`overflow-hidden relative rounded-md h-[500px] w-full lg:w-[444px] bg-center bg-cover`}
     >
+      <img
+        src={projectImg}
+        alt="project image"
+        className="w-full h-full absolute"
+        draggable={!true}
+      />
       {/* latest project description content */}
       <div className="w-full h-full absolute hover:bg-gradient-to-b from-[#f5f6fc1a] via-[#f5f6fc1a] via-[#ff5e1480] to-orange transition-all duration-300 group ">
         <div className="w-[52px] h-[162px] rounded-b-full absolute right-0 top-0 bg-orange grid gap-[10px] content-end items-center justify-center pb-[10px] -mt-[170px] group-hover:-mt-0 transition-all ease-in-out duration-500">
