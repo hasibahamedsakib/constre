@@ -21,8 +21,8 @@ const Testimonials = () => {
 
   return (
     <section className="py-20 2xl:py-[120px]">
-      <div className="Container grid grid-cols-3 items-center ">
-        <div className="col-span-1 text-left">
+      <div className="Container grid grid-cols-5  items-center 2xl:gap-[30px]">
+        <div className="col-span-2 text-left pl-10">
           <img src={testiQute} alt="testi qute" draggable={!true} />
           <p className="leading-9 text-sm sm:text-base md:text-lg text-orange font-medium font-Archivo mt-5">
             What People Say
@@ -38,11 +38,11 @@ const Testimonials = () => {
           </p>
         </div>
         <div
-          className="col-span-2 ml-20 keen-slider relative py-5"
+          className="col-span-3 ml-20 keen-slider relative py-5 2xl:w-[730px]"
           ref={sliderRef}
         >
           <div className="keen-slider__slide number-slide1 ">
-            <div className="bg-wheat p-5 sm:p-7 md:p-8 lg:p-10">
+            <div className="bg-wheat p-5 sm:p-7 md:p-8 lg:px-[35px] lg:py-10">
               <p className="text-sm sm:text-base md:text-[17px] tracking-[1px] leading-7 text-gray font-medium italic font-Archivo  ">
                 I noticed one thing it is very productive to discuss a project
                 with pople who have clients technical background. I forgot how
