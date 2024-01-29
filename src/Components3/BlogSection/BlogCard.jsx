@@ -20,7 +20,7 @@ const BlogCard = ({
         />
       </div>
       {/* card icons */}
-      <div className="px-[33px] py-[18px] bg-orange group-hover:bg-wheat absolute right-0 top-1/2 rounded-l-full  flex items-center justify-center transition-all duration-300 overflow-hidden">
+      <div className="px-[26px] py-[12px] bg-orange group-hover:bg-wheat absolute right-0 top-1/2 rounded-l-full  flex items-center justify-center transition-all duration-300 overflow-hidden">
         <span className="absolute bottom-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-in-out transform translate-y-0 bg-normalBlack group-hover:h-full opacity-90"></span>
         <span className="absolute bottom-0 left-0 flex w-full h-0 mb-0 transition-all duration-500 ease-in-out transform translate-y-0 bg-orange group-hover:h-full "></span>
         <p className="text-white text-base md:text-lg font-Yantramanav font-medium z-[1] transition-all duration-300">

@@ -9,7 +9,7 @@ const BlogSection = () => {
       blogDate: "20 March",
       user: "Admin",
       blogComment: "5 Comments",
-      blogTitle: " Diversity in Building Celebrated by Builderrine",
+      blogTitle: "Diversity in Building Celebrated by Builderrine",
       blogUrl: "#",
     },
     {
@@ -18,7 +18,7 @@ const BlogSection = () => {
       blogDate: "15 April",
       user: "Moderator",
       blogComment: "3 Comments",
-      blogTitle: " Diversity in Building Celebrated by Builderrine",
+      blogTitle: "How to Secure Funding for Your New Home at London",
       blogUrl: "#",
     },
     {
@@ -27,7 +27,7 @@ const BlogSection = () => {
       blogDate: "25 June",
       user: "Admin",
       blogComment: "7 Comments",
-      blogTitle: " Diversity in Building Celebrated by Builderrine",
+      blogTitle: "Company Receives Recognition for Excellence",
       blogUrl: "#",
     },
   ];
