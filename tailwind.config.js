@@ -8,6 +8,9 @@ export default {
         Yantramanav: ["Yantramanav", "sans-serif"],
       },
       colors: {
+        PrimaryColor: ["#171717"],
+        SecondaryColor: ["#ff5e14"],
+        BorderColor: ["#ffffff34"],
         gray: "#565969",
         graySmoke: "#8f9199",
         wheat: "#f2f3f5",

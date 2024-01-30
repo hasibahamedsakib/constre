@@ -12,11 +12,19 @@ import { BsEnvelopeAt } from "react-icons/bs";
 const Footer3 = () => {
   return (
     <footer className="bg-[url('./images/home-3/footer-bg.jpg')] bg-center bg-cover bg-no-repeat">
-      <div className="w-full  md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px] mx-auto">
+      <div
+        className="w-full  md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px] mx-auto"
+        data-aos="zoom-in-down"
+        data-aos-duration="1100"
+      >
         <Brand />
       </div>
       <div className="Container grid md:grid-cols-2 lg:grid-cols-4 gap-5 2xl:gap-[30px] items-center lg:items-start justify-between py-20 2xl:py-[120px] space-y-5 lg:space-y-0">
-        <div className="px-2 sm:px-5 lg:px-2">
+        <div
+          className="px-2 sm:px-5 lg:px-2"
+          data-aos="zoom-in-up"
+          data-aos-duration="1100"
+        >
           <img src="/images/home-3/footer-logo.png" className="" alt="" />
           <p className="text-sm lg:text-base xl:text-[17px] leading-[30px] font-Archivo font-light text-graySmoke  mt-6 lg:mt-[35px] ">
             Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
@@ -57,7 +65,11 @@ const Footer3 = () => {
           </div>
         </div>
 
-        <div className="px-2 sm:px-5 lg:px-2 ">
+        <div
+          className="px-2 sm:px-5 lg:px-2 "
+          data-aos="zoom-in-up"
+          data-aos-duration="1100"
+        >
           <h4 className="text-lg sm:text-xl md:text-2xl lg:text-[26px] leading-7 sm:leading-8 md:leading-[30px] font-Yantramanav font-bold text pb-4 md:pb-5 lg:pb-8 2xl:pb-10 text-white">
             Our Services
           </h4>
@@ -75,7 +87,11 @@ const Footer3 = () => {
             </li>
           </ul>
         </div>
-        <div className="px-2 sm:px-5 lg:px-2 ">
+        <div
+          className="px-2 sm:px-5 lg:px-2 "
+          data-aos="zoom-in-up"
+          data-aos-duration="1100"
+        >
           <h4 className="text-lg sm:text-xl md:text-2xl lg:text-[26px] leading-7 sm:leading-8 md:leading-[30px] font-Yantramanav font-bold text pb-4 md:pb-5 lg:pb-8 2xl:pb-10 text-white">
             Contact Info
           </h4>
@@ -97,7 +113,11 @@ const Footer3 = () => {
             </p>
           </ul>
         </div>
-        <div className="px-2 sm:px-5 lg:px-2 ">
+        <div
+          className="px-2 sm:px-5 lg:px-2 "
+          data-aos="zoom-in-up"
+          data-aos-duration="1100"
+        >
           <h4 className="text-lg sm:text-xl md:text-2xl lg:text-[26px] leading-7 sm:leading-8 md:leading-[30px] font-Yantramanav font-bold text pb-4 md:pb-5 lg:pb-8 2xl:pb-10 text-white">
             News Latter
           </h4>
@@ -125,7 +145,11 @@ const Footer3 = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-[#0C1438] py-7">
+      <div
+        className="bg-[#0C1438] py-7"
+        data-aos="zoom-in-up"
+        data-aos-duration="1100"
+      >
         <div className="Container flex flex-col sm:flex-row items-center justify-between">
           <p
             className="text-sm xl:text-base text-graySmoke

@@ -50,7 +50,11 @@ const Testimonials = () => {
   return (
     <section className="py-20 2xl:pt-[180px] 2xl:pb-[120px]">
       <div className="Container grid grid-cols-5  items-center 2xl:gap-[30px]">
-        <div className="col-span-5 lg:col-span-2 text-left pr-5">
+        <div
+          className="col-span-5 lg:col-span-2 text-left pr-5 2xl:pr-10"
+          data-aos="zoom-in-down"
+          data-aos-duration="1100"
+        >
           <img
             src={testiQute}
             alt="testi qute"
@@ -72,6 +76,8 @@ const Testimonials = () => {
         </div>
         <div
           className="col-span-5 lg:col-span-3 lg:ml-2 xl:ml-5 2xl:ml-20 keen-slider relative py-5 2xl:w-[730px]"
+          data-aos="zoom-in-down"
+          data-aos-duration="1100"
           ref={sliderRef}
         >
           {testimonialsData.map(

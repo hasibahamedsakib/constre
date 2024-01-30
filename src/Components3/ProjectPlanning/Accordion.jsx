@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 export default function Accordion({ children, title, id, active }) {
-  console.log(active);
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   useEffect(() => {

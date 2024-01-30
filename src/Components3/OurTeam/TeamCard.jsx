@@ -8,7 +8,11 @@ import { Link } from "react-router-dom";
 
 const TeamCard = ({ teamMemberImg, name, designation }) => {
   return (
-    <div className="w-full 2xl:w-[286px] h-[383px]  sm:h-[483px] md:h-[383px] group overflow-y-hidden relative">
+    <div
+      className="w-full 2xl:w-[286px] h-[383px]  sm:h-[483px] md:h-[383px] group overflow-y-hidden relative"
+      data-aos="zoom-in-down"
+      data-aos-duration="1100"
+    >
       <div className="w-full 2xl:w-[286px] h-[330px] sm:h-[385px] md:h-[330px]  relative group overflow-y-hidden">
         <img
           src={teamMemberImg}

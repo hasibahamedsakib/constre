@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <div className="bg-[url('/images/home-3/home3_hero_bg.jpg')] h-[850px] bg-center bg-cover bg-no-repeat  flex justify-start items-center ">
-      <div className="Container">
+      <div className="Container" data-aos="zoom-in-up" data-aos-duration="1000">
         <div className="sm:w-[420px] md:w-[450px] lg:w-[500px] xl:w-[550px] font-Archivo ">
           <p className="text-sm sm:text-base md:text-lg xl:text-xl font-medium text-orange ">
             Welcome to Constre

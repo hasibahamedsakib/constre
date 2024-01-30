@@ -2,7 +2,11 @@
 
 const SectionHeader = ({ textAlign, title, subTitle, color }) => {
   return (
-    <div className="text-center">
+    <div
+      className="text-center"
+      data-aos="zoom-in-down"
+      data-aos-duration="1000"
+    >
       <p
         className={`leading-5 sm:leading-7 pb-[10px] text-sm sm:text-base md:text-lg text-orange font-medium font-Archivo ${
           textAlign ? textAlign : "text-center"

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { FaArrowUp } from "react-icons/fa";
+
+import { FaArrowUpFromBracket } from "react-icons/fa6";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,7 +31,7 @@ const GoToTop = () => {
     <Wrapper>
       {isVisible && (
         <div className="top-btn" onClick={goToBtn}>
-          <FaArrowUp className="top-btn--icon" />
+          <FaArrowUpFromBracket className="top-btn--icon" />
         </div>
       )}
     </Wrapper>
@@ -47,9 +48,9 @@ const Wrapper = styled.section`
     font-size: 1.2rem;
     width: 3rem;
     height: 3rem;
-    color: #c19d68;
+    color: #ff5e14;
     background-color: transparent;
-    border: 3px dotted #c19d68;
+    border: 1px solid #ff5e14;
     box-shadow: ;
     border-radius: 50%;
     position: fixed;
@@ -60,7 +61,6 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
     &--icon {
       animation: gototop 1.2s linear infinite alternate-reverse;
     }
@@ -70,7 +70,7 @@ const Wrapper = styled.section`
         transform: translateY(-0.5rem);
       }
       100% {
-        transform: translateY(0.8rem);
+        transform: translateY(0.7rem);
       }
     }
   }
@@ -89,7 +89,7 @@ const Wrapper = styled.section`
   }
   .top-btn:hover {
     color: #fff;
-    background-color: #c19d68;
+    background-color: #ff5e14;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;

@@ -12,6 +12,8 @@ const ProjectCard = ({
   return (
     <div
       className={`overflow-hidden relative rounded-md h-[500px] w-full  bg-center bg-cover`}
+      data-aos="zoom-in-down"
+      data-aos-duration="1100"
     >
       <img
         src={projectImg}

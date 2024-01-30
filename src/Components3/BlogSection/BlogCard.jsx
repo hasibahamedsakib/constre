@@ -10,7 +10,11 @@ const BlogCard = ({
   blogUrl,
 }) => {
   return (
-    <div className="rounded-md border-b-orange border-b-[1px] relative group">
+    <div
+      className="rounded-md border-b-orange border-b-[1px] relative group"
+      data-aos="zoom-in-down"
+      data-aos-duration="1100"
+    >
       <div className="overflow-hidden rounded-t-md">
         <img
           src={blogImg}

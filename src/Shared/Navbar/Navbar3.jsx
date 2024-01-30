@@ -18,7 +18,11 @@ const Navbar3 = () => {
     >
       {/* top Navbar */}
       <div className="bg-[#090f27] h-[50px] hidden md:flex items-center  ">
-        <div className=" Container flex items-center justify-between ">
+        <div
+          className=" Container flex items-center justify-between "
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
           <p className="text-sm md:text-base 3xl:text-[17px] items-center font-Yantramanav">
             {" "}
             We will go through all the stages of construction
@@ -35,7 +39,7 @@ const Navbar3 = () => {
           </div>
         </div>
       </div>
-      <div className=" Container">
+      <div className=" Container" data-aos="zoom-in" data-aos-duration="1000">
         {/* main Navbar */}
         <div className="flex flex-col lg:flex-row items-center justify-between  lg:h-[100px]">
           {/* website Logo */}
@@ -87,7 +91,7 @@ const Navbar3 = () => {
                   : isActive
                   ? "active"
                   : ""}     lg:border-b-0 px-3 py-2 w-full block transition-all duration-300 group relative`}
-              to="/"
+              to="/home3"
             >
               <span className="flex items-center">
                 Home

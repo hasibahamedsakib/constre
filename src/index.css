@@ -8,8 +8,203 @@
   @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] 2xl:w-[1330px]  px-2 md:px-3 lg:px-4 xl:px-5 3xl:px-8 mx-auto;
 }
 
-.btn-primary {
+html,
+body {
+  overflow-x: hidden;
 }
+
+/* homepage one */
+
+.primary-button {
+  @apply relative bg-SecondaryColor-0 text-white inline-block font-Yantramanav px-5 py-3 font-medium before:absolute before:top-2/4 z-[1] before:w-[20px] before:h-[20px] before:bg-PrimaryColor-0 before:rounded-[50%] before:-left-5 before:-translate-x-1/2 before:-z-[1] before:-translate-y-1/2 after:absolute after:top-2/4 after:-right-[20px] after:translate-x-1/2 after:-translate-y-1/2 after:w-[20px] after:h-[20px] after:bg-PrimaryColor-0 before:transition-all before:duration-500 after:transition-all after:-z-[1] after:duration-500 after:rounded-[50%] hover:before:animate-[criss-cross-left_0.8s_both] hover:before:[animation-direction:alternate] hover:after:animate-[criss-cross-right.8s_both] hover:after:[animation-direction:alternate] overflow-hidden transition-all duration-300 sm:px-9 sm:py-4;
+}
+
+.primary-button2 {
+  @apply relative bg-PrimaryColor-0 text-white inline-block font-Yantramanav px-5 py-3 font-medium before:absolute before:top-2/4 z-[1] before:w-[20px] before:h-[20px] before:bg-SecondaryColor-0 before:rounded-[50%] before:-left-5 before:-translate-x-1/2 before:-z-[1] before:-translate-y-1/2 after:absolute after:top-2/4 after:-right-[20px] after:translate-x-1/2 after:-translate-y-1/2 after:w-[20px] after:h-[20px] after:bg-SecondaryColor-0 before:transition-all before:duration-500 after:transition-all after:-z-[1] after:duration-500 after:rounded-[50%] hover:before:animate-[criss-cross-left_0.8s_both] hover:before:[animation-direction:alternate] hover:after:animate-[criss-cross-right.8s_both] hover:after:[animation-direction:alternate] overflow-hidden transition-all duration-300 sm:px-9 sm:py-4;
+}
+
+.section-sub-title {
+  @apply text-[18px] text-SecondaryColor-0 font-medium font-Yantramanav pl-11 relative inline-block before:absolute before:top-3 before:left-0 before:w-9 before:h-[2px] before:bg-SecondaryColor-0;
+}
+
+.feature-box {
+  @apply py-4 px-4 sm:py-6 sm:px-6 lg:py-6 lg:px-4 2xl:px-10 2xl:py-9 bg-white before:absolute before:border-t-4 before:border-l-4 border-SecondaryColor-0 hover:before:border-b-[6px] before:border-r-[10px] before:bottom-0 before:right-0 before:border-SecondaryColor-0 before:w-full before:h-0 before:opacity-0 hover:before:opacity-100 hover:before:h-full before:transition-all before:duration-500 relative border-b-4 transition-all duration-500 after:absolute after:w-[34px] after:h-[34px] after:bg-[url(/assets/images/feature/feature-shape.png)] after:-right-[40px] hover:after:right-[10px] after:-bottom-[40px] hover:after:bottom-1 after:transition-all after:duration-700 overflow-hidden hover:bg-PrimaryColor-0 z-10 before:-z-10 after:-z-10;
+}
+
+/* Custom CSS Start Here*/
+
+.banner-shape {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 94, 21, 1);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgb(185 28 28 / 25%) 50%,
+    #a31414 50%,
+    rgba(255, 255, 255, 0.25) 70%
+  );
+  mask-image: linear-gradient(
+    -75deg,
+    rgb(185 28 28 / 25%) 50%,
+    #a31414 50%,
+    rgba(255, 255, 255, 0.25) 70%
+  );
+  -webkit-mask-size: 200%;
+  mask-size: 200%;
+  animation: shine 3s infinite;
+}
+
+.project-section .swiper-slide.swiper-slide-active {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.swiper-slide.swiper-slide-active .project-box {
+  opacity: 1;
+  bottom: 40px;
+}
+
+.pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  border-radius: unset;
+  margin: 0 14px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff5e14;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  left: 38%;
+  bottom: 7%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    left: -6%;
+  }
+}
+
+@keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+@keyframes dance2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    -webkit-transform: translate3d(25px, -25px, 0);
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, -25px, 25px);
+  }
+}
+
+@keyframes rotateme {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes play-btn {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(254, 254, 254, 0.3),
+      0 0 0 10px rgba(254, 254, 254, 0.3), 0 0 0 20px rgba(254, 254, 254, 0.3);
+    box-shadow: 0 0 0 0 rgba(254, 254, 254, 0.3),
+      0 0 0 10px rgba(254, 254, 254, 0.3), 0 0 0 20px rgba(254, 254, 254, 0.3);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 10px rgba(254, 254, 254, 0.3),
+      0 0 0 20px rgba(254, 254, 254, 0.3), 0 0 0 30px rgba(254, 254, 254, 0);
+    box-shadow: 0 0 0 10px rgba(254, 254, 254, 0.3),
+      0 0 0 20px rgba(254, 254, 254, 0.3), 0 0 0 30px rgba(254, 254, 254, 0);
+  }
+}
+
+@keyframes Dance {
+  0% {
+    -webkit-transform: translateX(0px);
+  }
+
+  50% {
+    -webkit-transform: translateX(35px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0px);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    -webkit-transform: translateY(20px) translateX(-50%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-20px) translateX(-50%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0px) translateX(-50%);
+  }
+}
+
+/* homepage-3 */
 
 .footer-service-list {
   @apply text-sm lg:text-base xl:text-[17px] leading-[30px] font-Archivo font-normal text-graySmoke hover:text-orange transition-all ease-in-out duration-300 cursor-pointer;

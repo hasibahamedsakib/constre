@@ -8,7 +8,11 @@ const AboutConstre = () => {
     <section className="bg-[url('./images/home-3/about-bg.jpg')] bg-center bg-cover bg-no-repeat h-full 3xl:h-[870px] grid items-center py-20 2xl:py-[120] relative">
       <div className="Container flex flex-col lg:flex-row gap-10 items-center justify-between  px-3">
         {/* about content */}
-        <div className=" w-full lg:w-[530px] font-Archivo ">
+        <div
+          className=" w-full lg:w-[530px] font-Archivo "
+          data-aos="zoom-in-right"
+          data-aos-duration="1000"
+        >
           <p className="text-sm sm:text-base md:text-lg font-medium text-orange ">
             About Constre Company
           </p>
@@ -55,7 +59,11 @@ const AboutConstre = () => {
         </div>
 
         {/* about image */}
-        <div className="py-6 xl:py-0">
+        <div
+          className="py-6 xl:py-0"
+          data-aos="zoom-in-left"
+          data-aos-duration="1000"
+        >
           <img
             src={constreAbout}
             draggable={!true}

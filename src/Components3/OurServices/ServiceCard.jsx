@@ -8,7 +8,11 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 const ServiceCard = ({ image, title, description, icon, btnUrl }) => {
   return (
-    <div className="rounded-md border-b-orange border-b-[1px] relative group">
+    <div
+      className="rounded-md border-b-orange border-b-[1px] relative group"
+      data-aos="zoom-in-up"
+      data-aos-duration="1000"
+    >
       <div className="overflow-hidden rounded-t-md">
         <img
           src={image}
