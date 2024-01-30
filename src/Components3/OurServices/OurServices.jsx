@@ -22,7 +22,9 @@ const OurServices = () => {
             title="General Construction"
             description="Modern designer are mosters famed common 
               prefabricated wooden make fastened."
-            icon={<VscTools size={40} />}
+            icon={
+              <VscTools className="w-7 h-7 md:w-8 md:h-8 2xl:w-10 2xl:h-10" />
+            }
             btnUrl={"#"}
           />
           <ServiceCard
@@ -30,7 +32,9 @@ const OurServices = () => {
             title="Property maintenance"
             description="Modern designer are mosters famed common 
               prefabricated wooden make fastened."
-            icon={<BsHouseGearFill size={40} />}
+            icon={
+              <BsHouseGearFill className="w-7 h-7 md:w-8 md:h-8 2xl:w-10 2xl:h-10" />
+            }
             btnUrl={"#"}
           />
           <ServiceCard
@@ -38,7 +42,9 @@ const OurServices = () => {
             title="Project managment"
             description="Modern designer are mosters famed common 
               prefabricated wooden make fastened."
-            icon={<GrUserSettings size={40} />}
+            icon={
+              <GrUserSettings className="w-7 h-7 md:w-8 md:h-8 2xl:w-10 2xl:h-10" />
+            }
             btnUrl={"#"}
           />
         </div>

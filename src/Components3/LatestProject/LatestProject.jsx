@@ -19,10 +19,11 @@ const LatestProject = () => {
         slides: { perView: 2, spacing: 20 },
       },
       "(min-width:992px)": {
-        slides: { perView: 3, spacing: 20 },
+        slides: { perView: 3, spacing: 15 },
       },
-      "(min-width:1200px)": {
-        slides: { perView: 4, spacing: 10 },
+
+      "(min-width:1600px)": {
+        slides: { perView: 4, spacing: 20 },
       },
     },
     loop: true,
@@ -73,7 +74,7 @@ const LatestProject = () => {
   return (
     <section className="py-20 2xl:py-[120px]">
       {/* Section header */}
-      <div className="Container flex items-center justify-between">
+      <div className="Container flex flex-col gap-y-5 sm:gap-y-0 sm:flex-row items-center justify-between">
         <SectionHeader
           textAlign="text-left"
           subTitle="Latest Project"
@@ -87,7 +88,7 @@ const LatestProject = () => {
         </Link>
       </div>
 
-      <div className="px-5 2xl:px-[30px]">
+      <div className="px-1 sm:px-5 2xl:px-[30px]">
         {/* section slider content */}
         <div className="mt-14 xl:mt-[60px]  keen-slider " ref={sliderRef}>
           {projectData.map(

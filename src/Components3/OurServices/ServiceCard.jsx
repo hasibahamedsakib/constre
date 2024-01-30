@@ -18,7 +18,7 @@ const ServiceCard = ({ image, title, description, icon, btnUrl }) => {
         />
       </div>
       {/* card icons */}
-      <div className="w-[100px] h-[70px] bg-orange group-hover:bg-wheat absolute right-0 top-1/2 rounded-l-full border-b-2 border-b-normalBlack flex items-center justify-center transition-all duration-300 overflow-hidden">
+      <div className="w-[80px] 2xl:w-[100px] h-[50px] xl:h-[60px] 2xl:h-[70px] bg-orange group-hover:bg-wheat absolute right-0 top-[43%] sm:top-[61%] md:top-[47%] lg:top-[43%] xl:top-[45%] 2xl:top-1/2 rounded-l-full border-b-2 border-b-normalBlack flex items-center justify-center transition-all duration-300 overflow-hidden">
         <span className="absolute bottom-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-normalBlack group-hover:h-full opacity-90"></span>
         <span className="text-white  z-[1] transition-all duration-300">
           {icon}

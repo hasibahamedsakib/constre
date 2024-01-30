@@ -10,7 +10,7 @@ const HeroSection = () => {
             Welcome to Constre
           </p>
           <h1
-            className="text-3xl md:text-4xl xl:text-5xl uppercase text-white font-bold py-2 leading-10 md:leading-[50px] lg:leading-[60px] 2xl:leading-[70px] font-Archivo "
+            className="text-3xl md:text-4xl xl:text-5xl uppercase text-white font-bold py-2 leading-10 md:leading-[50px] lg:leading-[60px] xl:leading-[70px] font-Archivo "
             style={{ wordSpacing: "6px" }}
           >
             Building a new and consistent
@@ -35,7 +35,7 @@ const HeroSection = () => {
                   alt=""
                 />
               </Link>
-              <p className="text-sm md:text-base lg:text-lg leading-7 text-white  font-medium font-Archivo">
+              <p className="text-sm md:text-base lg:text-lg leading-7 text-white  font-medium font-Archivo hidden sm:block">
                 20k+ Happy Client
               </p>
             </div>

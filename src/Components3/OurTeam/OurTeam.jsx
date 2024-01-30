@@ -37,6 +37,7 @@ const OurTeam = () => {
       "(min-width: 320px)": {
         slides: { perView: 1, spacing: 20 },
       },
+
       "(min-width: 768px)": {
         slides: { perView: 2, spacing: 20 },
       },
@@ -44,7 +45,7 @@ const OurTeam = () => {
         slides: { perView: 3, spacing: 20 },
       },
       "(min-width:1200px)": {
-        slides: { perView: 4, spacing: 10 },
+        slides: { perView: 4, spacing: 20 },
       },
     },
     loop: true,

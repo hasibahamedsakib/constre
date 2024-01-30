@@ -1,6 +1,6 @@
 .arrow {
-  width: 42px;
-  height: 42px;
+  width: 35px;
+  height: 35px;
   position: absolute;
   bottom: 0%;
   transform: translateY(-0%);
@@ -19,4 +19,57 @@
 .arrow--right {
   /* left: auto; */
   right: 44%;
+}
+
+@media (min-width: 320px) {
+  .arrow--left {
+    left: 36%;
+  }
+  .arrow--right {
+    right: 36%;
+  }
+}
+@media (min-width: 576px) {
+  .arrow {
+    width: 42px;
+    height: 42px;
+  }
+  .arrow--left {
+    left: 40%;
+  }
+  .arrow--right {
+    right: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .arrow--left {
+    left: 42%;
+  }
+  .arrow--right {
+    right: 42%;
+  }
+}
+@media (min-width: 992px) {
+  .arrow--left {
+    left: 41%;
+  }
+  .arrow--right {
+    right: 41%;
+  }
+}
+@media (min-width: 1200px) {
+  .arrow--left {
+    left: 42%;
+  }
+  .arrow--right {
+    right: 42%;
+  }
+}
+@media (min-width: 1400px) {
+  .arrow--left {
+    left: 43%;
+  }
+  .arrow--right {
+    right: 43%;
+  }
 }

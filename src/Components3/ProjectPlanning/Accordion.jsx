@@ -23,7 +23,7 @@ export default function Accordion({ children, title, id, active }) {
           <span
             className={` font-Yantramanav text-base sm:text-lg md:text-xl 2xl:text-[22px] ${
               accordionOpen ? "text-orange" : "text-white"
-            } hover:text-orange transition-all duration-300 font-medium leading-10`}
+            } hover:text-orange transition-all duration-300 font-medium leading-7 md:leading-8 lg:leading-10`}
           >
             {title}
           </span>
@@ -65,7 +65,7 @@ export default function Accordion({ children, title, id, active }) {
         }`}
       >
         <div className="overflow-hidden ">
-          <p className="py-4 pb-5 text-sm sm:text-base font-Archivo font-light leading-[28px] text-graySmoke">
+          <p className="py-2 sm:py-4 pb-5 text-sm sm:text-base font-Archivo font-light leading-[28px] text-graySmoke">
             {children}
           </p>
         </div>

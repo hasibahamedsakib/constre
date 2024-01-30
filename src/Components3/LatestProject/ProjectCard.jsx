@@ -11,12 +11,12 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      className={`overflow-hidden relative rounded-md h-[500px] w-full lg:w-[444px] bg-center bg-cover`}
+      className={`overflow-hidden relative rounded-md h-[500px] w-full  bg-center bg-cover`}
     >
       <img
         src={projectImg}
         alt="project image"
-        className="w-full h-full absolute"
+        className="w-full h-full absolute object-cover"
         draggable={!true}
       />
       {/* latest project description content */}
